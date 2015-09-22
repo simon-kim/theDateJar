@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>The Date Jar</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Loading Bootstrap -->
+    <link href="app/css/vendor/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Loading Flat UI Pro -->
+    <link href="app/css/flat-ui-pro.css" rel="stylesheet">
+    <link href="app/css/date-jar.css" rel="stylesheet">
+    <link href="app/css/animate.css" rel="stylesheet">
+
+    <link rel="shortcut icon" href="app/img/favicon.ico">
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+      <script src="js/vendor/html5shiv.js"></script>
+      <script src="js/vendor/respond.min.js"></script>
+    <![endif]-->
+  </head>
+  <body ng-app="dateJarApp">
+
+    <div class="container" ng-controller="mainCtrl">
+      <div class="jarHeadline">
+        <h1 class="jarHeader">The Date Jar
+          <small>The Ultimate Date Companion</small>
+        </h1>
+      </div>
+      <div class="logo"></div>
+      <div class="dateText animated fadeInUp" ng-if="datePicked">{{datePicked}}</div>
+      <div class="btnCenter">
+        <button type="button" class="btn btn-lg btn-success" ng-click="atHome()">At Home</button>
+        <button type="button" class="btn btn-lg btn-info" ng-click="outside()">Outdoors</button>
+        <button type="button" class="btn btn-lg btn-warning" ng-click="free()">Free!</button>
+        <button type="button" class="btn btn-lg btn-danger" ng-click="pricey()">A Bit Pricey</button>
+        <button type="button" class="btn btn-lg btn-primary" ng-click="couple()">Couples Dates</button>
+      </div>
+      <br>
+      <div class="btnCenter">
+        <button type="button" class="btn newbtn btn-lg btn-default" ng-click="jesus()">Jesus, Take The Wheel</button>
+      </div>
+      <div class="dateFooter">
+        <p data-toggle="modal" data-target="#aboutModal" class="footerBlocks">About</p>
+        <p data-toggle="modal" data-target="#rulesModal" class="footerBlock2">Rules</p>
+      </div>
+
+      <!-- About Modal -->
+      <div class="modal fade" id="aboutModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+          <div class="modal-content">
+            <div class="modal-header">
+              <button type="button" class="close fui-cross" data-dismiss="modal" aria-hidden="true"></button>
+              <h4 class="modal-title" id="myModalLabel">About The Date Jar</h4>
+            </div>
+            <div class="modal-body">
+              <p>The Date Jar is a simple application designed to spice up a relationship when things feel like they're slowing down or not being spontaneous enough. It forces couples to make time for each other in this busy world we live in and also helps people explore new things and get to know each other better. It is currently optimized for use in areas around Southern California.</p>
+            </div>
+            <div class="modal-footer">
+              <button type="button" class="btn btn-success" data-dismiss="modal">Close</button>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Rules Modal -->
+      <div class="modal fade" id="rulesModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+          <div class="modal-content">
+            <div class="modal-header">
+              <button type="button" class="close fui-cross" data-dismiss="modal" aria-hidden="true"></button>
+              <h4 class="modal-title" id="myModalLabel">Rules</h4>
+            </div>
+            <div class="modal-body">
+              <p>The rules are simple. You pick a category and do the date given to you. To keep things interesting, you CAN NOT repick a date.</p>
+
+              <p>Already went on that date before? Tough luck, do it again! Don't like what was given to you? Suck it up and explore new things! Feel like the date is too difficult to plan/arrange? Sounds like an excuse, and excuses aren't allowed here.</p>
+
+              <p>Like Shia Lebeouf would say, just <a href="https://www.youtube.com/watch?v=ZXsQAXx_ao0">DO</a> it. Don't let your dreams be dreams. Simple enough? Got it? Good.</p>
+
+              <p>Oh, and of course, have fun!</p>
+            </div>
+            <div class="modal-footer">
+              <button type="button" class="btn btn-success" data-dismiss="modal">Cool, got it!</button>
+            </div>
+          </div>
+        </div>
+      </div>
+
+    </div>
+
+    <!-- jQuery (necessary for Flat UI's JavaScript plugins) -->
+    <script src="app/js/vendor/jquery.min.js"></script>
+    <!-- Include all compiled plugins (below), or include individual files as needed -->
+    <script src="app/js/flat-ui-pro.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.5/angular.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.5/angular-route.js"></script>
+    <script src="app/js/app.js"></script>
+    <script src="app/js/controller/mainCtrl.js"></script>
+    <script src="app/js/mainService.js"></script>
+
+    </script>
+
+  </body>
+</html>
