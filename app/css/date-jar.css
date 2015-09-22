@@ -1,0 +1,68 @@
+.jarHeadline {
+	padding: 33px 0 73px;
+    text-align: center;
+}
+.jarHeader { 
+	margin: 10px 0;
+    font: 900 90px/100px "Helvetica Neue", Helvetica, Arial, sans-serif;
+    letter-spacing: -2px;
+    color: #FF69B4;
+ }
+ .jarHeader small {
+ 	display: block;
+    padding-top: 5px;
+    font-size: 22px;
+    font-weight: 700;
+    color: rgba(52, 73, 94, .3);
+    letter-spacing: 0;
+ }
+ .logo {
+ 	width: 236px;
+    height: 181px;
+    margin: 0 auto 63px;
+    overflow: hidden;
+    text-indent: -9999em;
+    background: url(../img/flower.svg) center 0 no-repeat;
+    background-size: 236px 181px;
+}
+.btn {
+    margin-top: 10px;
+}
+.btnCenter {
+	margin: 0 auto;
+	text-align: center;
+}
+.newbtn {
+    background-color: #9B59B6;
+}
+.newbtn:hover,
+.newbtn.hover,
+.newbtn:focus,
+.newbtn:active,
+.newbtn.active {
+    background-color: #a66bbe;
+}
+.newbtn:active,
+.newbtn.active {
+  background: #8E44AD;
+  border-color: #8E44AD;
+}
+.dateText {
+    text-align: center;
+    margin: 10px 0 53px;
+    font-weight: 600;
+    font-size: 18px;
+}
+.dateFooter {
+    text-align: center;
+    margin: 40px 0 0 0;
+}
+.footerBlocks,
+.footerBlock2 {
+    color: #3498DB;
+    font-size: 14px;
+    display: inline-block;
+}
+.footerBlock2 {
+    margin-left: 30px;
+}
